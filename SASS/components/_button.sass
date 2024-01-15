@@ -1,0 +1,45 @@
+.button
+    &:link, &:visited
+        display: flex
+        align-items: center
+        gap: 2.4rem
+        position: relative
+        background-color: $color-white
+        padding: .2rem .2rem
+        border-radius: 10rem
+        transition: all .4s
+        width: fit-content
+    &:hover
+        gap: 3.4rem
+
+    &:active
+        gap: 2.4rem
+        transform: translateX(1rem)
+
+    span
+        font-size: 1.5rem
+        font-style: normal
+        font-family: $font-bold
+        line-height: 2.4rem
+        margin-left: 2.4rem
+        color: $-color-blue-darker
+
+    svg
+
+
+    &__blue
+        &:link, &:visited
+            background-color: $-color-blue-darker
+
+        span
+            color: $color-white
+
+
+@media all and ( max-width: 76.8rem )
+    .button
+        &__mobile
+            &:link, &:visited
+                display: inline-block
+                border: .1rem solid $-color-blue-darker
+                text-align: center
+    

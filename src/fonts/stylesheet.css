@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "Nexa-Bold";
+  src: url("nexa_bold/3fe2115b5af4c997012cc8131973d9d1.eot");
+  src: url("nexa_bold/3fe2115b5af4c997012cc8131973d9d1.eot?#iefix")
+      format("embedded-opentype"),
+    url("nexa_bold/3fe2115b5af4c997012cc8131973d9d1.woff") format("woff"),
+    url("nexa_bold/3fe2115b5af4c997012cc8131973d9d1.woff2") format("woff2"),
+    url("nexa_bold/3fe2115b5af4c997012cc8131973d9d1.ttf") format("truetype"),
+    url("nexa_bold/3fe2115b5af4c997012cc8131973d9d1.svg#Nexa Demo Bold")
+      format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nexa-Light";
+  src: url("nexa_light/9cf07fe29abf00274ae979ae99a98b43.eot");
+  src: url("nexa_light/9cf07fe29abf00274ae979ae99a98b43.eot?#iefix")
+      format("embedded-opentype"),
+    url("nexa_light/9cf07fe29abf00274ae979ae99a98b43.woff") format("woff"),
+    url("nexa_light/9cf07fe29abf00274ae979ae99a98b43.woff2") format("woff2"),
+    url("nexa_light/9cf07fe29abf00274ae979ae99a98b43.ttf") format("truetype"),
+    url("nexa_light/9cf07fe29abf00274ae979ae99a98b43.svg#Nexa Text W03 Book")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nexa";
+  src: url("nexa_bold/Nexa\ Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nexa";
+  src: url("nexa_bold/Nexa\ Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nexa";
+  src: url("nexa_bold/Nexa\ Light.otf") format("opentype");
+  font-weight: 200;
+  font-style: normal;
+}

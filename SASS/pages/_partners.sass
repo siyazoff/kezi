@@ -1,0 +1,159 @@
+.partners
+    padding: 10rem 0
+    background: $color-white
+    position: relative
+    z-index: 0
+
+    &__bg
+        width: 100%
+        max-width: 38.8rem
+        height: 44rem
+        position: absolute
+        left: 0
+        bottom: 0
+        z-index: -1
+
+    .cont
+        margin-bottom: 3rem
+
+    .swiper
+        height: 30.4rem
+        width: 100%
+        max-width: 129.6rem
+        overflow: visible
+        position: relative
+
+        .swiper-wrapper
+            align-items: end
+
+        .swiper-slide
+            height: 20rem
+            width: 30.6rem
+            transition:  width .3s ease-in, height 1.2s ease-in-out
+
+            &-active
+                height: 30.4rem
+                width: 45.9rem !important
+
+                .slide_wrapper
+                    .bottom
+                        opacity: 1
+
+        .slide_wrapper
+            border-radius: 1.6rem
+            border: .1rem solid $color-blue
+            position: relative
+            height: 100%
+            display: flex
+            align-items: end
+            padding: 3.2rem 2rem 
+            background-color: $color-white
+
+            img
+                width: 20%
+                height: 20%
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+                object-fit: contain
+
+            .bottom
+                display: flex
+                justify-content: space-between
+                width: 100%
+                align-items: end
+                opacity: 0
+                transition: opacity .3s ease-in-out
+
+                
+                a
+                    display: block
+                    height: fit-content
+                    width: fit-content
+
+                    svg
+                        width: 1.2rem
+                        height: 1.2rem
+
+        .heading
+            position: absolute
+            top: 0
+            right: 0
+            display: flex
+            justify-content: space-between
+            width: 100%
+            max-width: 81.3rem
+            
+            .left
+                display: flex
+                flex-direction: column
+                gap: .8rem
+            .right
+                display: flex
+                gap: 1.6rem
+                align-items: start
+
+                [class^='partners-swiper-']
+                    cursor: pointer
+
+    .heading_mobile
+        display: none
+
+    .mobile_btns_partners-swiper
+        display: none
+
+
+@media all and ( max-width: 768px )
+    .partners
+        padding: 6rem 0
+
+        &__bg
+            width: 100%
+            max-width: 32.9rem
+            height: 34.7rem
+
+        .cont
+            margin-bottom: 1.6rem
+
+        .swiper
+            height: 23.8rem
+            max-width: 100%
+            position: relative
+            padding-inline: 1.6rem
+
+
+            .swiper-slide
+                height: 100%
+                width: 100% !important
+
+                &-active
+                    height: 100%
+                    width: 100%
+
+            .slide_wrapper
+                padding: 1.2rem 1.6rem
+
+                img
+                    width: 30%
+                    height: 30%
+
+                .bottom
+                    opacity: 1
+
+            .heading
+                display: none
+
+        .heading_mobile
+            display: flex
+            margin-top: 2rem
+            flex-direction: column
+            gap: .4rem
+        .mobile_btns_partners-swiper
+            display: flex
+            gap: 1.3rem
+            margin-top: 2rem
+            justify-content: center
+
+
+            
