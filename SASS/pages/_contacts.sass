@@ -1,0 +1,157 @@
+.contacts
+    padding: 10rem 0
+    background-color: $-color-blue-darker
+
+    .mobile_button
+        display: none
+
+    .heading
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-top: 2.8rem
+
+        [data-tabs]
+            display: flex
+            gap: 4rem
+            border: none
+
+            li
+                a
+                    font-size: 1.7rem
+                    padding: 0
+                    border: 0
+                    transition: all .3s ease-in-out
+
+                    &[role=tab][aria-selected=true]
+                        background-color: transparent
+
+                    &[role=tab]:hover:not([aria-selected=true])
+                        background: transparent
+                        color: white
+
+                    &:not([aria-selected=true])
+                        color: #9A9DA3
+
+    &__box
+        margin-top: 2rem
+
+        &_inner
+            display: flex
+            justify-content: space-between
+
+        .left
+            max-width: 41.6rem
+            width: 100%
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+        .right
+            padding: 3.8rem 3.3rem
+            background-color: #115994
+            border-radius: 1.6rem
+            img
+                width: 100%
+                height: 100%
+
+    
+    &__card
+        padding: 2.4rem 3.2rem 2.8rem
+        background-color: $color-white
+        border-radius: 1.6rem
+        display: flex
+        justify-content: space-between
+
+        .contacts__card_left
+            max-width: 15.2rem
+
+        .contacts__card_right
+            width: fit-content
+            display: flex
+            flex-direction: column
+            align-items: end
+            justify-content: space-between
+
+        h3
+            font-size: 1.9rem
+            font-style: normal
+            line-height: 3.2rem
+            color: $color-blue
+            font-family: $font-bold
+
+        p
+            font-size: 1.5rem
+            font-style: normal
+            line-height: 2.4rem
+            color: $color-gray
+
+        a
+            font-size: 1.5rem
+            font-style: normal
+            line-height: 2.4rem
+            color: $color-gray
+
+@media all and (max-width: 76.8rem)
+    .contacts
+        padding: 6rem 0
+
+        .heading
+            align-items: start
+            flex-direction: column
+            margin-top: 2rem
+            gap: 1.6rem
+
+            a.button
+                display: none
+
+            .for-scroll
+                overflow-x: scroll
+                width: 100%
+                &::-webkit-scrollbar 
+                    width: 100%
+                    height: .4rem
+                &::-webkit-scrollbar-track 
+                    background: $-color-blue-darker
+                &::-webkit-scrollbar-thumb 
+                    background-color: $-color-blue-darkest
+                &::-webkit-scrollbar-thumb:hover 
+                    background: $color-blue
+            [data-tabs]
+                gap: 4rem
+                width: fit-content
+
+        &__box
+            margin-top: 1.2rem
+
+            &_inner
+                flex-direction: column
+                gap: 1.2rem
+
+            .left
+                max-width: 100%
+                gap: 1.2rem
+            .right
+                padding: 1.6rem 1.4rem
+        .mobile_button
+            display: flex
+            width: 100%
+            margin-top: 2.8rem
+
+            span, svg
+                margin-left: auto
+
+        
+        &__card
+            padding: 1.2rem 1.6rem 1.6rem
+
+            h3
+                font-size: 1.7rem
+                line-height: 2.8rem
+
+            p
+                font-size: 1.3rem
+                line-height: 2rem
+
+            a
+                font-size: 1.3rem
+                line-height: 2rem

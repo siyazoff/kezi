@@ -7,11 +7,11 @@
     background: white
     display: block
     z-index: 1000
+    transition: all .4s ease-in-out
 
     &__wrapper
         display: flex
         justify-content: space-between
-        // align-items: center
         height: 100%
 
         &_right
@@ -19,7 +19,6 @@
             max-width: 89.5rem
             width: 100%
             justify-content: space-between
-            // gap: 6.4rem
 
         ul
             display: flex
@@ -70,6 +69,13 @@
 @media all and (max-width: 1055px)
     .header
         height: 8rem
+        overflow: hidden
+
+        &.active
+            height: 48.4rem
+
+        &__wrapper
+            height: fit-content
         
         &__wrapper_right
             display: none
@@ -117,13 +123,40 @@
         .popup
             display: block
             width: 100%
-            height: 100%
-            position: fixed
+            height: 40.4rem
+            position: absolute
             left: 0
-            top: 100%
-            background: $-color-blue-darkest
-            transition: top .3s ease-in-out
+            top: 8rem
+            background: $color-white
+            transition: height .3s ease-in-out, padding .6s ease-in-out, top .2s ease-in-out
+            z-index: -1
+            overflow: hidden
+            padding:  1.6rem 1.6rem 4rem
 
-            &.active
-                top: 0%
-        
+            ul.popup__menu
+                display: flex
+                flex-direction: column
+                gap: 2rem
+
+                a
+                    color: $color-gray
+                    display: inline-block
+                    font-size: 1.5rem
+                    line-height: 2.4rem
+                    font-family: $font-bold
+            h3
+                margin-top: 4.8rem
+                color: $color-gray
+                font-size: 1.5rem
+                line-height: 2.4rem
+                margin-bottom: 1.2rem
+
+            ul.language
+                display: flex
+                gap: 2.4rem
+
+                a
+                    color: $color-gray
+                    display: inline-block
+                    font-size: 1.5rem
+                    line-height: 2.4rem
