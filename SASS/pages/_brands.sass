@@ -1,0 +1,75 @@
+.brands
+    background-color: $-color-blue-darkest
+    padding: 3.2rem 0 10rem
+
+    .heading
+        display: flex
+        justify-content: space-between
+        margin-top: 2.8rem
+
+    &__box
+        margin-top: 2rem
+
+    &__grid
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        height: 100%
+        width: 100%
+        gap: 2.3rem
+
+        .item
+            border-radius: 1.6rem
+            border: 0.1rem solid $color-blue
+            position: relative
+            height: 27.6rem
+            width: 100%
+            display: flex
+            align-items: end
+            padding: 2rem 3.2rem
+            background-color: #FFF
+            cursor: pointer
+
+            img
+                width: 20%
+                height: 20%
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+                -o-object-fit: contain
+                object-fit: contain
+            
+            .bottom
+                display: flex
+                justify-content: space-between
+                width: 100%
+                align-items: end
+
+
+@media all and ( max-width: 768px )
+    .brands
+        padding: 1.8rem 0 6rem
+
+        .heading
+            display: flex
+            justify-content: space-between
+            margin-top: 2rem
+
+            p
+                display: none
+
+        &__box
+            margin-top: 1.6rem
+
+        &__grid
+            grid-template-columns: repeat(1, 1fr)
+            gap: 1.6rem
+
+            .item
+                height: 23.8rem
+                padding: 1.2rem 1.6rem
+
+                .bottom
+                    p
+                        font-size: 1.9rem
+                        line-height: 3.2rem
