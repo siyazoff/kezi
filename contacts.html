@@ -239,20 +239,146 @@
       </div>
     </header>
     <main>
-      <section class="page_not_found">
-        <img
-          class="page_not_found_bg"
-          src="src/img/page_not_found.webp"
-          alt="kezi"
-        />
+      <div class="breadcrumbs_wrapper">
         <div class="cont">
-          <div class="page_not_found__box">
-            <h1>404</h1>
-            <h2 class="subtitle subtitle-white">
-              Данная страница не существует, либо была удалена.
-            </h2>
-            <a href="#" class="button">
-              <span>На главную</span>
+          <div class="breadcrumbs">
+            <a href="\">Главная</a>
+            <p>-</p>
+            <p>Контакты</p>
+          </div>
+        </div>
+      </div>
+      <section class="contacts contacts_page" id="contacts">
+        <div class="cont">
+          <h2 class="subtitle subtitle-white subtitle-heading_white">
+            Контакты
+          </h2>
+          <div class="heading">
+            <h2 class="title-heading title-heading-white">Наши контакты</h2>
+            <div class="for-scroll">
+              <ul data-tabs>
+                <li><a data-tabby-default href="#all-tab">Все</a></li>
+                <li><a href="#ast-tab">Астана</a></li>
+                <li><a href="#ala-tab">Алмата</a></li>
+                <li><a href="#shym-tab">Шымкент</a></li>
+              </ul>
+            </div>
+            <a href="#" class="button"
+              ><span>Все контакты</span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="44"
+                height="44"
+                viewBox="0 0 44 44"
+                fill="none"
+              >
+                <circle cx="22" cy="22" r="22" fill="#1A428F" />
+                <path
+                  d="M20 18L24 22L20 26"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="contacts__box">
+            <div class="contacts__box_inner" id="all-tab">
+              <div class="left">
+                <div class="contacts__card">
+                  <div class="contacts__card_left">
+                    <h3>Астана</h3>
+                    <p>Пн-Пт: 9:00 - 18:00 Сб: 10:00 - 15:00</p>
+                  </div>
+                  <div class="contacts__card_right">
+                    <p>ул. Примерная, 123</p>
+                    <a href="tel:+7 700 435 43 21">+7 700 435 43 21</a>
+                    <a href="mailto:info@mail.example">info@mail.example</a>
+                  </div>
+                </div>
+                <div class="contacts__card">
+                  <div class="contacts__card_left">
+                    <h3>Алмата</h3>
+                    <p>Пн-Пт: 9:00 - 18:00 Сб: 10:00 - 15:00</p>
+                  </div>
+                  <div class="contacts__card_right">
+                    <p>ул. Примерная, 123</p>
+                    <a href="tel:+7 700 435 43 21">+7 700 435 43 21</a>
+                    <a href="mailto:info@mail.example">info@mail.example</a>
+                  </div>
+                </div>
+                <div class="contacts__card">
+                  <div class="contacts__card_left">
+                    <h3>Шымкент</h3>
+                    <p>Пн-Пт: 9:00 - 18:00 Сб: 10:00 - 15:00</p>
+                  </div>
+                  <div class="contacts__card_right">
+                    <p>ул. Примерная, 123</p>
+                    <a href="tel:+7 700 435 43 21">+7 700 435 43 21</a>
+                    <a href="mailto:info@mail.example">info@mail.example</a>
+                  </div>
+                </div>
+              </div>
+              <div class="right">
+                <img src="src/img/contacts_map.svg" alt="kezi" />
+              </div>
+            </div>
+            <div class="contacts__box_inner" id="ast-tab">
+              <div class="left">
+                <div class="contacts__card">
+                  <div class="contacts__card_left">
+                    <h3>Астана</h3>
+                    <p>Пн-Пт: 9:00 - 18:00 Сб: 10:00 - 15:00</p>
+                  </div>
+                  <div class="contacts__card_right">
+                    <p>ул. Примерная, 123</p>
+                    <a href="tel:+7 700 435 43 21">+7 700 435 43 21</a>
+                    <a href="mailto:info@mail.example">info@mail.example</a>
+                  </div>
+                </div>
+              </div>
+              <div class="right">
+                <img src="src/img/contacts_map.svg" alt="kezi" />
+              </div>
+            </div>
+            <div class="contacts__box_inner" id="ala-tab">
+              <div class="left">
+                <div class="contacts__card">
+                  <div class="contacts__card_left">
+                    <h3>Алмата</h3>
+                    <p>Пн-Пт: 9:00 - 18:00 Сб: 10:00 - 15:00</p>
+                  </div>
+                  <div class="contacts__card_right">
+                    <p>ул. Примерная, 123</p>
+                    <a href="tel:+7 700 435 43 21">+7 700 435 43 21</a>
+                    <a href="mailto:info@mail.example">info@mail.example</a>
+                  </div>
+                </div>
+              </div>
+              <div class="right">
+                <img src="src/img/contacts_map.svg" alt="kezi" />
+              </div>
+            </div>
+            <div class="contacts__box_inner" id="shym-tab">
+              <div class="left">
+                <div class="contacts__card">
+                  <div class="contacts__card_left">
+                    <h3>Шымкент</h3>
+                    <p>Пн-Пт: 9:00 - 18:00 Сб: 10:00 - 15:00</p>
+                  </div>
+                  <div class="contacts__card_right">
+                    <p>ул. Примерная, 123</p>
+                    <a href="tel:+7 700 435 43 21">+7 700 435 43 21</a>
+                    <a href="mailto:info@mail.example">info@mail.example</a>
+                  </div>
+                </div>
+              </div>
+              <div class="right">
+                <img src="src/img/contacts_map.svg" alt="kezi" />
+              </div>
+            </div>
+            <a href="#" class="button mobile_button"
+              ><span>Все контакты</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="44"

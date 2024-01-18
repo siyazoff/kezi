@@ -1,0 +1,69 @@
+.page_not_found
+    height: 90vh
+    position: relative
+    background-color: #115994
+    .cont
+        position: relative
+
+    &__box
+        position: absolute
+        top: 50%
+        left: 1rem
+        transform: translateY(-50%)
+        display: flex
+        flex-direction: column
+
+        h1
+            font-size: 24rem
+            font-style: normal
+            font-weight: 700
+            line-height: 24rem
+            font-family: $font-bold
+        h2
+            margin-bottom: 3.6rem
+
+
+    &_bg
+        width: 100%
+        max-width: 57.9rem
+        height: 61.2rem
+        position: absolute
+        right: 0
+        bottom: 0
+
+.thx
+    background-color: $-color-blue-darkest
+
+    .page_not_found__box
+        h1
+            font-size: 6.4rem
+            line-height: 6.4rem
+            margin-bottom: 1.6rem
+        h2
+            margin-bottom: 4rem
+
+
+
+@media all and (max-width: 768px)
+    .page_not_found
+
+        &__box
+            left: 50%
+            transform: translate(-50%, -50%)
+            align-items: center
+            position: relative
+            text-align: center
+
+            h1
+                font-size: 16rem
+                line-height: 16rem
+
+
+        &_bg
+            width: 100%
+            max-width: 37.9rem
+            height: 41.2rem
+            position: absolute
+            right: 0
+            bottom: 0
+            object-fit: cover
