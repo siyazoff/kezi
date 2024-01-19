@@ -372,6 +372,10 @@ body {
   color: #FFF;
   line-height: 2rem;
   font-style: normal;
+  transition: color 0.3s ease-in-out;
+}
+.breadcrumbs a:hover {
+  color: #9A9DA3;
 }
 
 .header {
@@ -405,6 +409,10 @@ body {
   height: 100%;
   display: block;
   position: relative;
+  transition: color 0.3s ease-in-out;
+}
+.header__wrapper ul li a:hover {
+  color: #187FD3;
 }
 .header__wrapper ul li a.active::after {
   content: "";
@@ -540,6 +548,12 @@ body {
   padding: 10rem 0 3.6rem;
   position: relative;
   top: 8.8rem;
+}
+.footer a {
+  transition: color 0.3s ease-in-out;
+}
+.footer a:hover {
+  color: #187FD3;
 }
 .footer .p-mobile {
   display: none;
@@ -833,6 +847,11 @@ body {
   align-items: end;
   padding: 3.2rem 2rem;
   background-color: #FFF;
+  transition: all 0.3s ease-in-out;
+}
+.partners .swiper .slide_wrapper:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0rem 0.4rem 0.4rem 0rem rgba(0, 0, 0, 0.3);
 }
 .partners .swiper .slide_wrapper img {
   width: 20%;
@@ -1388,6 +1407,10 @@ body {
   font-style: normal;
   line-height: 2.4rem;
   color: #434443;
+  transition: color 0.3s ease-in-out;
+}
+.contacts__card a:hover {
+  color: #187FD3;
 }
 
 @media all and (max-width: 76.8rem) {
