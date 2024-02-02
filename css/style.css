@@ -386,7 +386,7 @@ body {
   height: 8.8rem;
   background: white;
   display: block;
-  z-index: 1000;
+  z-index: 999;
   transition: all 0.4s ease-in-out;
 }
 .header__wrapper {
@@ -758,6 +758,25 @@ body {
   transform: translateY(-11rem);
 }
 
+.follow-cursor {
+  display: block;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #0d6efd;
+  border-radius: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  position: absolute;
+  z-index: 999;
+  pointer-events: none;
+  transition: width 0.64s, height 0.64s, border-radius 0.64s, background 0.64s;
+}
+.follow-cursor_active {
+  height: 128px;
+  width: 128px;
+  border-width: 2px;
+  background: rgba(13, 110, 253, 0.32);
+}
+
 @media all and (max-width: 768px) {
   .home {
     padding-top: 4rem;
@@ -796,6 +815,9 @@ body {
     -o-object-fit: contain;
        object-fit: contain;
     z-index: -1;
+  }
+  .follow-cursor {
+    display: none;
   }
 }
 .partners {
